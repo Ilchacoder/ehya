@@ -1,0 +1,104 @@
+@media ( max-width: 1280px)
+  .container
+    width: 900px
+  .header
+    &-container
+      width: 992px
+    &-hero
+      background-position: 225px
+
+@media ( max-width: 992px )
+  .container
+    width: 740px
+  .header
+    &-container
+      width: 768px
+    &-hero
+      padding-left: 15px
+      background-position: 30px
+
+@media ( max-width: 768px )
+  .container
+    width: 85%
+  .nav
+    &__items
+      display: none
+    &-mobail
+      display: block
+  .header
+    &-container
+      width: 90%
+    &-hero
+      background-position: 0 0
+      padding: 36px 0 36px 28px
+      &__h3
+        margin-bottom: 24px
+      &__h1
+        font-size: $font-size * 4
+        line-height: 60px
+        margin-bottom: 20px
+        width: 393px
+      &__p
+        font-size: $font-size * 1.5
+        line-height: 32px
+        margin-bottom: 36px
+        width: 330px  
+      &__button
+        margin-bottom: 40px
+
+@media ( max-width: 576px )
+  .container
+    width: 95%
+  .nav
+    &-wrapper
+      margin-bottom: 0
+  .header
+    &-container
+      width: 100%
+    &-hero
+      background-position: -125px 0px
+      border-radius: 0
+  
+@media ( max-width: 480px )
+  .header
+    &-hero      
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+      background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%), url('../img/fon.jpg')
+      background-position: center top
+      background-repeat: no-repeat
+      padding: 350px 0 36px 0
+      &__info
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+      &__nav        
+        margin-bottom: 16px
+      &__h3
+        margin-bottom: 20px
+      &__h1
+        margin-bottom: 20px
+        font-size: $font-size * 3.2
+        line-height: 40px
+        width: 272px
+      &__p
+        margin-bottom: 24px
+        font-size: $font-size * 1.6
+        line-height: 28px
+        width: 280px
+      &__button
+        margin-bottom: 22px
+        line-height: 22px
+@media ( max-width: 350px )
+  .header
+    &-hero
+      &__nav
+        margin-right: 16px
+      &__img
+        width: 24px
+
+
+  
+  
