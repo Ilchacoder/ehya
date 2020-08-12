@@ -6,7 +6,13 @@
       width: 992px
     &-hero
       background-position: 225px
-
+  .collection
+    &-wrapper
+      grid-template-columns: 1fr 1fr
+    &-info
+      grid-row: 3/4
+      grid-column: span 2
+      padding: 0
 @media ( max-width: 992px )
   .container
     width: 740px
@@ -16,10 +22,10 @@
     &-hero
       padding-left: 15px
       background-position: 30px
-
+  
 @media ( max-width: 768px )
   .container
-    width: 85%
+    width: 88%
   .nav
     &__items
       display: none
@@ -27,7 +33,7 @@
       display: block
   .header
     &-container
-      width: 90%
+      width: 95%
     &-hero
       background-position: 0 0
       padding: 36px 0 36px 28px
@@ -45,20 +51,42 @@
         width: 330px  
       &__button
         margin-bottom: 40px
-
+  .collection
+    margin-bottom: 80px
+    &-wrapper
+      grid-template-columns: 1fr 1fr
+    
 @media ( max-width: 576px )
   .container
-    width: 95%
+    width: 90%
   .nav
     &-wrapper
       margin-bottom: 0
   .header
+    margin-bottom: 60px
     &-container
       width: 100%
     &-hero
       background-position: -125px 0px
       border-radius: 0
-  
+  .collection
+    margin-bottom: 64px
+    &-wrapper
+      grid-gap: 15px
+    &__img
+      &--1
+        grid-column: span 2
+        grid-row: 1/2
+      &--2
+        grid-row: 2/3
+      &--3
+        grid-row: 2/3
+    &-info
+      &__h1
+        font-size: $font-size * 3.5
+        margin-bottom: 0
+      &__p
+        font-size: $font-size * 1.8
 @media ( max-width: 480px )
   .header
     &-hero      
@@ -90,6 +118,23 @@
         width: 280px
       &__button
         margin-bottom: 22px
+        line-height: 22px
+  .collection
+    &-info
+      display: flex
+      flex-direction: column
+      align-items: center
+      &__h1
+        font-size: $font-size * 2.8
+        line-height: 36px
+        margin-bottom: 16px
+      &__p
+        font-size: $font-size * 1.6
+        line-height: 28px
+        margin-top: 0
+        margin-bottom: 24px
+      &__link
+        font-size: $font-size * 1.6
         line-height: 22px
 @media ( max-width: 350px )
   .header

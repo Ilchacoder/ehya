@@ -1,0 +1,45 @@
+.collection
+  margin-bottom: 145px
+  &-wrapper
+    display: grid
+    grid-template-columns: 320px 320px 1fr
+    grid-gap: 30px
+  &__img
+    border-radius: 8px
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    &--1
+      grid-row: 1/3
+    &--2
+      grid-row: 1/2
+    &--3
+      grid-column: 2/3
+  &-info
+    grid-row: 1 /3
+    padding-left: 28px
+    &__h1
+      font-family: "HKGrotesk-700"      
+      font-weight: 700
+      font-size: $font-size * 4.8
+      line-height: 60px
+      color: $dark
+      margin-bottom: 24px
+      margin-top: 0
+    &__p
+      font-weight: 400
+      font-size: $font-size * 2
+      line-height: 36px
+      color: $light-dark
+      margin-bottom: 32px
+    &__link
+      display: flex      
+      align-items: center
+      font-weight: 700
+      font-size: $font-size * 1.8
+      line-height: 25px
+      color: $bly      
+      text-decoration: none
+    &__img
+      width: 13px
+      margin-left: 20px
