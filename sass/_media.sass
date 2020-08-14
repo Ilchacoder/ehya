@@ -13,6 +13,28 @@
       grid-row: 3/4
       grid-column: span 2
       padding: 0
+  .story
+    &-wrapper
+      flex-direction: column
+    &-info
+      width: 100% 
+      margin-bottom: 128px
+  .story
+    &-info
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+    &-swiper
+      &__button
+        &--next
+          bottom: -57px
+          left: 55%
+          transform: translateX(-50%)
+        &--prev
+          bottom: -57px
+          left: 46%
+          transform: translateX(-50%)
 @media ( max-width: 992px )
   .container
     width: 740px
@@ -25,6 +47,21 @@
   .reviews
     &-container
       width: 650px
+  .subscribe
+    &-wrapper 
+      flex-direction: column
+      align-items: center
+      text-align: center
+      padding: 72px 0
+    &-info
+      margin-bottom: 56px
+    &-send
+      &::after
+        bottom: 84px
+        right: 0px
+      &::before
+        bottom: -268px
+        right: -906px
 @media ( max-width: 768px )
   .container
     width: 88%
@@ -75,8 +112,30 @@
     &-wrapper
       &__img
         margin-bottom: 12px
-      
-
+  .story    
+    &-swiper
+      &__button
+        &--next          
+          left: 56%
+        &--prev          
+          left: 44%
+    
+@media  ( max-width: 755px )
+  .story    
+    &-container
+      width: 90%
+      max-height: 1000px
+      overflow: hidden
+    &-swiper
+      display: none      
+      &__wrapper
+        flex-direction: column       
+        
+    &-slider
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 350px
 @media ( max-width: 700px )
   .trending
     &-items
@@ -137,6 +196,42 @@
         line-height: 24px
       &__img
         margin-bottom: 12px
+  .story
+    &-info
+      &__h1
+        font-size: $font-size * 2.8
+        line-height: 36px
+        margin-bottom: 16px
+      &__p
+        font-size: $font-size * 1.6
+        line-height: 28px
+        margin-bottom: 36px
+    &-swiper
+      &__button
+        &--prev
+          bottom: -36px
+        &--next
+          bottom: -36px
+  .story    
+    &-swiper
+      &__button
+        &--next          
+          left: 58%
+        &--prev          
+          left: 42%
+  .subscribe
+    &-send
+      width: 100%
+      &__grop
+        margin-bottom: 10px
+      &__button
+        position: initial
+        width: 100%
+        border-radius: 8px
+      &__form
+        width: 100%
+      &__input
+        padding-right: 30px
 @media ( max-width: 480px )
   .header
     &-hero      
@@ -236,6 +331,13 @@
           height: 2px
           top: 0px
           left: 6px
+  .story    
+    &-swiper
+      &__button
+        &--next          
+          left: 60%
+        &--prev          
+          left: 40%
 @media ( max-width: 350px )
   .header
     &-hero
