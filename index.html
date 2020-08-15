@@ -29,6 +29,7 @@
           </a>
 
           <div class="nav__items">
+            <img src="./img/svg/close.svg" alt="" class="nav__item--mobail" />
             <a href="#" class="nav__item">Home</a>
             <a href="#" class="nav__item">Landings</a>
             <a href="#" class="nav__item">Pages</a>
@@ -463,7 +464,7 @@
             </p>
           </div>
           <div class="subscribe-send">
-            <form action="#" class="subscribe-send__form">
+            <form action="send.php" method="POST" class="subscribe-send__form">
               <img
                 src="./img/svg/letter.svg"
                 class="subscribe-send__ico"
@@ -474,6 +475,8 @@
                   type="email"
                   class="subscribe-send__input"
                   placeholder="Your Emaill"
+                  name="email"
+                  required
                 />
               </div>
               <button class="button subscribe-send__button">Subscribe</button>
