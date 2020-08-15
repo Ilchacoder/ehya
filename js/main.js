@@ -35,3 +35,15 @@ var mySwiper_1 = new Swiper(".story-container", {
   spaceBetween: 28,
   speed: 800,
 });
+
+const headerBtn = document.querySelector(".nav-mobail");
+
+const headerBtnClose = document.querySelector(".nav__item--mobail");
+
+headerBtn.addEventListener("click", function () {
+  document.querySelector(".nav__items").classList.toggle("nav__items--visible");
+});
+
+headerBtnClose.addEventListener("click", function () {
+  document.querySelector(".nav__items").classList.toggle("nav__items--visible");
+});
