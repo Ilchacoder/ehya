@@ -29,6 +29,7 @@ var mySwiper_1 = new Swiper(".story-container", {
       slidesPerView: 1,
       slidesPerColumn: 2,
       slidesPerGroup: 1,
+      spaceBetween: 160,
     },
   },
 
@@ -47,3 +48,10 @@ headerBtn.addEventListener("click", function () {
 headerBtnClose.addEventListener("click", function () {
   document.querySelector(".nav__items").classList.toggle("nav__items--visible");
 });
+
+function mouseenter(event) {
+  mySwiper.autoplay.stop();
+}
+function mouseleave(event) {
+  mySwiper.autoplay.start();
+}
